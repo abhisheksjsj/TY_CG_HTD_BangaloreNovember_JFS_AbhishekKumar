@@ -1,0 +1,13 @@
+package com.capgemini.fms.dao;
+
+import java.util.List;
+
+import com.capgemini.fms.dto.CustomerBean;
+
+public interface CustomerDAO {
+	List<CustomerBean> getAllInfo();
+	public boolean searchCustomer(int custid);
+	public boolean deleteCustomer(int custid,String email);
+	
+
+}

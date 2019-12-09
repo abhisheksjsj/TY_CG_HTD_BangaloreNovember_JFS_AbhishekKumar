@@ -1,0 +1,17 @@
+package com.tyss.map.TreeMap;
+
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class TreeMap1 {
+	public static void main(String[] args) {
+		TreeMap<Integer, String> t1 = new TreeMap<Integer, String>();
+		t1.put(23, "Divya");
+		t1.put(43, "Anu");
+		t1.put(76, "Shree");
+
+		Set<Map.Entry<Integer, String>> s1 = t1.entrySet();
+	}
+
+}

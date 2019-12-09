@@ -1,0 +1,31 @@
+package com.capgemini.fms.dao;
+
+public class AdminDAOImpl implements AdminDAO{
+
+	@Override
+	public List<UserBean> getAllUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean createaUser(UserBean bean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteUser(int userid, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateUser(int userid, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
+
+}

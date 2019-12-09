@@ -1,0 +1,12 @@
+
+public class Pepsi1 implements Bottle1 {
+ public void open() {
+	
+}
+
+@Override
+public void drink() {
+	// TODO Auto-generated method stub
+	
+}
+}

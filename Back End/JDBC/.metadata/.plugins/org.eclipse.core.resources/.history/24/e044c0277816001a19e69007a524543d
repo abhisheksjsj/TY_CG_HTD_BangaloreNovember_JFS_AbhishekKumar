@@ -1,0 +1,36 @@
+package com.capgemini.fms.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.capgemini.fms.dto.ContractorBean;
+
+public class ContractorDAOImpl implements ContractorDAO {
+	ContractorBean cobean;
+
+	@Override
+	public List<ContractorBean> getAllInfo(ContractorBean cobean) {
+		List<ContractorBean> l2 = new ArrayList<ContractorBean>();
+		l2.add(cobean);
+		return l2;
+	}
+
+	@Override
+	public boolean searchContractor(int custid) {
+		cobean = new ContractorBean();
+		if (cobean.getCustid() == custid) {
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public boolean deletecontractor(int custid) {
+		cobean =new ContractorBean();
+		if(cobean.getCustid()==custid && cobean.) {
+			
+		}
+		return false;
+	}
+
+}

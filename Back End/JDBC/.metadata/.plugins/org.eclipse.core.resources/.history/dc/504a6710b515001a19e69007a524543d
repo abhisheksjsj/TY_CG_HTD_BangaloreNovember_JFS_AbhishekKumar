@@ -1,0 +1,57 @@
+package com.capgemini.fms.dto;
+
+public class CustomerBean {
+	private int custid;
+	private int telno;
+	private String cname;
+	private String town;
+	private String postcodde;
+	private String email;
+	public int getCustid() {
+		return custid;
+	}
+	public void setCustid(int custid) {
+		this.custid = custid;
+	}
+	public int getTelno() {
+		return telno;
+	}
+	public void setTelno(int telno) {
+		this.telno = telno;
+	}
+	public String getCname() {
+		return cname;
+	}
+	public void setCname(String cname) {
+		this.cname = cname;
+	}
+	public String getTown() {
+		return town;
+	}
+	public void setTown(String town) {
+		this.town = town;
+	}
+	public String getPostcodde() {
+		return postcodde;
+	}
+	public void setPostcodde(String postcodde) {
+		this.postcodde = postcodde;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	@Override
+	public String toString() {
+		return "CustomerBean [custid=" + custid + ", telno=" + telno + ", cname=" + cname + ", town=" + town
+				+ ", postcodde=" + postcodde + ", email=" + email + "]";
+	}
+
+	
+	
+	
+	
+	
+}

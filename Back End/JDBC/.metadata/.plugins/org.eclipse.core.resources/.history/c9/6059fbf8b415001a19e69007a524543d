@@ -1,0 +1,38 @@
+package com.capgemini.fms.controller;
+
+import java.util.Scanner;
+
+import com.capgemini.fms.dao.CustomerDAO;
+import com.capgemini.fms.dto.CustomerBean;
+import com.capgemini.fms.factory.UserFactory;
+
+public class CreateUser {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		CustomerDAO cdao = UserFactory.instanceOfCustomerDAOImpl();
+
+		CustomerBean bean = new CustomerBean();
+		System.out.println("Enter 1 to add customer account");
+		System.out.println("Enter 2 to get the Customer information");
+		System.out.println("Enter 3 to search a customer with custId");
+		System.out.println("Enter 4 to delete an Account");
+
+		int option = sc.nextInt();
+
+		switch (option) {
+		case 1:
+			System.out.println("Enter customer Id no");
+			int custid = sc.nextInt();
+			System.out.println("Enter Customer id");
+			int telno = sc.nextInt();
+			System.out.println("Enter HaulId");
+			String cname = sc.nextLine();
+			System.out.println("Enter ");
+			break;
+
+		default:
+			break;
+		}
+
+	}
+}

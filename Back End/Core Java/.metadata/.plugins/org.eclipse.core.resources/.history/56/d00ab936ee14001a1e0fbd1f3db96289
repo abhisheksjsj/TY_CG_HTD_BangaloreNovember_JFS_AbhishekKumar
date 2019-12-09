@@ -1,0 +1,13 @@
+package com.tyss.thread.createThread;
+
+public class TestC {
+	public static void main(String[] args) {
+		System.out.println("main started");
+		PVR p = new PVR();
+		User u1 = new User(p);
+		u1.start();
+		p
+		System.out.println("main ended...");
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.tyss.map.ArrayListAndTreeMap;
+
+public class Student {
+	int studAge;
+	String studName;
+
+	public Student(int studAge, String studName) {
+		super();
+		this.studAge = studAge;
+		this.studName = studName;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [studAge=" + studAge + ", studName=" + studName + "]";
+	}
+
+}

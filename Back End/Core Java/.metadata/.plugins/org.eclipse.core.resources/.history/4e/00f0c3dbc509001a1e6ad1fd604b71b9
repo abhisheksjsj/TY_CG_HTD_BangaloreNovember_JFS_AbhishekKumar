@@ -1,0 +1,7 @@
+
+public abstract class RobertBosch implements Toyota {
+	void design() {
+		System.out.println("Design is given by RobertBosch");
+	}
+
+}

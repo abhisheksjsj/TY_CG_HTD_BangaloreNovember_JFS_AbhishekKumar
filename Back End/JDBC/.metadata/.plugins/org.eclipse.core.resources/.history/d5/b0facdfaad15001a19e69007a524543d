@@ -1,0 +1,9 @@
+package com.capgemini.fms.dao;
+
+public interface AdminDAO {
+	List<UserBean> getAllUsers();
+	public boolean createaUser(UserBean bean);
+	public boolean deleteUser(int userid,String password);
+	public boolean updateUser(int userid,String password);
+
+}

@@ -1,0 +1,8 @@
+package com.tyss.map.LinkedHashMap;
+
+public class LinkedHashMap2 {
+	public static void main(String[] args) {
+		LinkedHashMap<Integer,String> l1=new LinkedHashMap<Integer,String>()
+	}
+
+}

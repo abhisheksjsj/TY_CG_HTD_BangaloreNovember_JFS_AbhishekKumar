@@ -1,0 +1,105 @@
+package com.capgemini.fms.controller;
+
+import java.util.Scanner;
+
+import com.capgemini.fms.dao.ContractorDAO;
+import com.capgemini.fms.dao.CustomerDAO;
+import com.capgemini.fms.dto.ContractorBean;
+import com.capgemini.fms.dto.CustomerBean;
+import com.capgemini.fms.factory.UserFactory;
+
+public class UserController {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		CustomerDAO cdao = UserFactory.instanceOfCustomerDAOImpl();
+		ContractorDAO codao = UserFactory.instanceOfContractorDaoImpl();
+
+		ContractorBean cobean = new ContractorBean();
+		CustomerBean bean = new CustomerBean();
+
+		while (true) {
+			System.out.println("1.Go to Customer");
+			System.out.println("2.Go to  Contractor");
+			System.out.println("3.Go to Product");
+			int c1 = sc.nextInt();
+			switch (c1) {
+			case 1:
+				System.out.println("Enter 1 to add customer account");
+				System.out.println("Enter 2 to get the Customer information");
+				System.out.println("Enter 3 to search a Customer with custId");
+				System.out.println("Enter 4 to delete an Customer account");
+
+				int o1 = sc.nextInt();
+
+				switch (o1) {
+				case 1:
+					System.out.println("Enter Customer Id no");
+					bean.setCustid(sc.nextInt());
+					System.out.println("Enter Tel no");
+					bean.setTelno(sc.nextInt());
+					System.out.println("Enter Customer name");
+					bean.setCname(sc.next());
+					System.out.println("Enter Town ");
+					bean.setTown(sc.next());
+					System.out.println("Enter PostCode");
+					bean.setPostcode(sc.next());
+					System.out.println("Enter Email");
+					bean.setEmail(sc.next());
+					cdao.addCustomer(bean);
+					break;
+
+				case 2:
+					for (CustomerBean cb : cdao.getAllInfo(bean)) {
+						System.out.println(cb);
+						System.out.println("Customer Information is viewed");
+					}
+					break;
+				case 3:
+					System.out.println("Enter the CustomerId for search");
+					int c = bean.getCustid();
+					break;
+
+				case 4:
+					System.out.println("Enter the CustomerId");
+					int a = sc.nextInt();
+					System.out.println("Enter the Password");
+					String s = sc.next();
+
+				}
+				break;
+			case 2:
+				System.out.println("Enter 1 to add Contractor account");
+				System.out.println("Enter 2 to get the Contractor information");
+				System.out.println("Enter 3 to search a Contractor with custId");
+				System.out.println("Enter 4 to delete an Contractor account");
+
+				int o2 = sc.nextInt();
+				switch (o2) {
+				case 1:
+					System.out.println("Enter the Contractor no");
+					cobean.setContractno(sc.nextInt());
+					System.out.println("Enter the Customer id");
+					cobean.setCustid(sc.nextInt());
+					System.out.println("Enter the Haul id");
+					cobean.setHaulid(sc.nextInt());
+					System.out.println("Enter the Product Id ");
+					cobean.setProdid(sc.nextInt());
+					System.out.println("Enter the Quantity");
+					cobean.setQuantity(sc.nextInt());
+					System.out.println("Enter the Delivery Date");
+					cobean.setDeliverydate(sc.next());
+					System.out.println("Enter the Delivery Day");
+					cobean.setDeliveryday(sc.next());
+
+					System.out.println("Contractor account is added");
+					break;
+
+				default:
+					break;
+				}
+
+			}
+
+		}
+	}
+}

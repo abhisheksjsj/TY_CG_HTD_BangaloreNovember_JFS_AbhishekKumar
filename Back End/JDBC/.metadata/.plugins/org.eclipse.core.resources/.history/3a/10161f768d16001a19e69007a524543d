@@ -1,0 +1,15 @@
+package com.capgemini.fms.dao;
+
+import java.util.List;
+
+import com.capgemini.fms.dto.ContractorBean;
+import com.capgemini.fms.dto.CustomerBean;
+
+public interface ContractorDAO {
+	List<ContractorBean> getAllInfo(ContractorBean cobean);
+
+	public boolean searchContractor(int custid);
+
+	public boolean deletecontractor(int custid);
+
+}

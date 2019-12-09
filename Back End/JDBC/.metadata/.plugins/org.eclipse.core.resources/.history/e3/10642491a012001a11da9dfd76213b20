@@ -1,0 +1,11 @@
+package com.caps.jdbc;
+
+import java.io.FileReader;
+
+public class EvolvedJDBCv2 {
+	public static void main(String[] args) {
+		FileReader reader = new FileReader(db.properties);
+
+	}
+
+}

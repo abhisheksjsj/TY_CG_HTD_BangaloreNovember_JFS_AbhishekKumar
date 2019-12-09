@@ -1,0 +1,53 @@
+package com.capgemini.fms.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.capgemini.fms.dto.CustomerBean;
+
+public class CustomerDAOImpl implements CustomerDAO {
+
+	CustomerBean bean;
+	List<CustomerBean> l = new ArrayList<CustomerBean>();
+
+	@Override
+	public List<CustomerBean> getAllInfo(CustomerBean bean) {
+		l.add(bean);
+		return l;
+	}
+
+	@Override
+	public boolean searchCustomer(int custid) {
+		bean = new CustomerBean();
+		if (bean.getCustid() == custid) {
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public boolean deleteCustomer(int index) {
+		// bean = new CustomerBean();
+		/*
+		 * if (bean.getCustid() == custid && bean.getEmail() == email) { return true; }
+		 */
+		if (l.contains(index)) {
+			l.remove(index);
+		} else {
+			System.out.println("customer is not available");
+			return false;
+		}
+	}
+
+	@Override
+	public boolean addCustomer(CustomerBean bean) {
+		if(l.add(bean)){
+			System.out.println("the user added successfully..!");
+			System.out.println("The index of added customer: "+l.indexOf(bean));
+			return true;
+		}else {
+			return false;
+		}
+	}
+
+	}

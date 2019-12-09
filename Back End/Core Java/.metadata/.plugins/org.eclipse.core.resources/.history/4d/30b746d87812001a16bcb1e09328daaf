@@ -1,0 +1,7 @@
+package com.tyss.map.TreeMap;
+
+import java.util.Comparator;
+
+public class SortingAge implements Comparator<Student>{
+	
+}

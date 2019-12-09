@@ -1,0 +1,28 @@
+package com.capgemini.fms.dao;
+
+import java.util.List;
+
+import com.capgemini.fms.dto.ContractorBean;
+
+public class ContractorDAOImpl implements ContractorDAO {
+	ContractorBean cobean;
+
+	@Override
+	public List<ContractorBean> getAllinfo(ContractorBean cobean) {
+		return null;
+	}
+
+	@Override
+	public boolean searchContractor(int custid) {
+		
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deletecontractor(int custid, String email) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

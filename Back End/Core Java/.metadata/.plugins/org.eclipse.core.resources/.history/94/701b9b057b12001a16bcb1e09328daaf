@@ -1,0 +1,12 @@
+package com.tyss.map.ArrayListAndTreeMap;
+
+import java.util.ArrayList;
+
+public class TreeMap3 {
+	public static void main(String[] args) {
+		ArrayList<Student> a1=new ArrayList<Student>();
+	
+		
+	}
+
+}

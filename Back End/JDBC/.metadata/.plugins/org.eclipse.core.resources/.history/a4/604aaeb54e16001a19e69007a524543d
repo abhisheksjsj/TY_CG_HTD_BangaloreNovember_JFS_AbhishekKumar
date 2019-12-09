@@ -1,0 +1,12 @@
+package com.capgemini.fms.dto;
+
+public class ContractorBeam {
+	private int contractno;
+	private int custid;
+	private int haulid;
+	private int prodid;
+	private int quantity;
+	private String deliverydate;
+	private String deliveryday;
+
+}

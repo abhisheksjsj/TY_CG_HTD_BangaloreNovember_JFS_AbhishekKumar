@@ -1,0 +1,5 @@
+package com.capgemini.fms.dto;
+
+public class CustomerBean {
+
+}

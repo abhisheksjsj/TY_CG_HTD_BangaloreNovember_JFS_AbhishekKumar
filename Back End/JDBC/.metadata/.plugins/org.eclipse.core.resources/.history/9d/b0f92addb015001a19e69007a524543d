@@ -1,0 +1,21 @@
+package com.capgemini.fms.factory;
+
+import com.capgemini.fms.dao.AdminDAO;
+import com.capgemini.fms.dao.ClientDAO;
+
+public class UserFactory {
+	private UserFactory() {
+
+	}
+
+	public static ClientDAO instanceOfClientDAOImpl() {
+		ClientDAO cdao = new ClientDAO();
+		return cdao;
+	}
+
+	public static AdminDAO instanceOfAdminDAOImpl() {
+		AdminDAO adao = new AdminDAO();
+		return adao;
+
+	}
+}

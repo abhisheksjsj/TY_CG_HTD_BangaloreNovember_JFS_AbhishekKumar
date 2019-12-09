@@ -1,0 +1,18 @@
+package com.tyss.map.TreeMap;
+
+import java.util.Comparator;
+
+public class SortingAge implements Comparator<Student> {
+	
+	//sorting based on Age
+	@Override
+	public int compare(Student o1, Student o2) {
+		if (o1.studAge > o2.studAge)
+			return 1;
+		else if (o1.studAge < o2.studAge)
+			return -1;
+		else
+			return 0;
+	}
+
+}

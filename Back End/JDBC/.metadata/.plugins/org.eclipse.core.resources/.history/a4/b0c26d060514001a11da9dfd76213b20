@@ -1,0 +1,15 @@
+package com.capgemini.jdbc.factory;
+
+import com.capgemini.jdbc.dao.UserDAOImpl;
+
+public class UserFactory {
+	private UserFactory() {
+
+	}
+
+	public UserDAOImpl instanceOfUserDAOImpl() {
+		return new UserDAOImpl();
+
+	}
+
+}

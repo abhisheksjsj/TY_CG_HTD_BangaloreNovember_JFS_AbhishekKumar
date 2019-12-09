@@ -1,0 +1,7 @@
+
+public interface Toyota {
+	void desighn();
+
+	void engine();
+
+}

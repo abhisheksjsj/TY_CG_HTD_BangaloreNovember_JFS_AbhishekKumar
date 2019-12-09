@@ -1,0 +1,17 @@
+package com.tyss.map.ArrayListAndTreeMap;
+
+import java.util.ArrayList;
+import java.util.TreeMap;
+
+public class TreeMap3 {
+	public static void main(String[] args) {
+		ArrayList<Student> a1 = new ArrayList<Student>();
+		a1.add(new Student(13, "Divya"));
+		a1.add(new Student(13, "Anuu"));
+		a1.add(new Student(13, "Akshay"));
+
+		TreeMap<String, ArrayList<Student>> t1 = new TreeMap<String, ArrayList<Student>>();
+		t1.put("1st Std", a1);
+	}
+
+}

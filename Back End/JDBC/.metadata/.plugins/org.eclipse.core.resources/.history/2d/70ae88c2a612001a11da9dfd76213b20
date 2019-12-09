@@ -1,0 +1,28 @@
+package com.capgemini.jdbc.dao;
+
+import com.capgemini.jdbc.bean.UserBean;
+
+public class UserDAOImpl implements UserDAO {
+
+	public UserDAOImpl() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public UserBean userLogin(String username, String password) {
+
+		return null;
+	}
+
+	@Override
+	public List<UserBean> getAllUsers() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

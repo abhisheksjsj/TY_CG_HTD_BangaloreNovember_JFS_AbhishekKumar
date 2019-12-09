@@ -1,0 +1,12 @@
+
+public class TestVehicle {
+	public static void main(String[] args) throws CloneNotSupportedException {
+		Vehicle v1 = new Vehicle("Jaguar");
+		Object o1 = v1.clone();
+		// System.out.println(o1);
+
+		Vehicle v2 = (Vehicle) o1;
+		
+		System.out.println(v2.vehicleName); 
+	}
+}

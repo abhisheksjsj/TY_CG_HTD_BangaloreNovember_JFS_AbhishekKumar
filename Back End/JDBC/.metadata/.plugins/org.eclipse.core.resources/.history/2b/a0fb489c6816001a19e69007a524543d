@@ -1,0 +1,6 @@
+package com.capgemini.junit.junit_five;
+
+public interface Predicate {
+	boolean test(int x);
+
+}

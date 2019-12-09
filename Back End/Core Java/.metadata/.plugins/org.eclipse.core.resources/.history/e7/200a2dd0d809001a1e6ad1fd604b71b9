@@ -1,0 +1,11 @@
+
+public class TestSon {
+	public static void main(String[] args) {
+
+		Son s1 = new Son();
+		s1.house();
+		Father2 s2=new Son();
+		s2.house();
+
+	}
+}

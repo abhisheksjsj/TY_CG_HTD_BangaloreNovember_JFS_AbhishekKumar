@@ -1,0 +1,33 @@
+package com.capgemini.fms.dao;
+
+import java.util.List;
+
+import com.capgemini.fms.dto.CustomerBean;
+
+public class AdminDAOImpl implements AdminDAO {
+
+	@Override
+	public List<CustomerBean> getAllUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean createaUser(CustomerBean bean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteUser(int userid, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateUser(int userid, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

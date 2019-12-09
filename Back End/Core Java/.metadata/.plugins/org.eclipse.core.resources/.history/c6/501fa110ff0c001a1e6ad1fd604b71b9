@@ -1,0 +1,11 @@
+package customunchecked;
+
+public class SBIAtm {
+	public static void main(String[] args) {
+		System.out.println("main started");
+		AtmSimulator a1 = new AtmSimulator();
+		a1.withdraw(41000);
+		System.out.println("maiin ended");
+	}
+
+}

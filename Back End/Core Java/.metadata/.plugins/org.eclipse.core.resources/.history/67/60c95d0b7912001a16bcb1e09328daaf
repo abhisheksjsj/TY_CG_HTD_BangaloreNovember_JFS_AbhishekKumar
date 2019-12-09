@@ -1,0 +1,27 @@
+package com.tyss.map.TreeMap;
+
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class TreeMap2 {
+	public static void main(String[] args) {
+		TreeMap<Student, String> t1 = new TreeMap<Student, String>(s2);
+		SortingAge s2=new SortingAge();
+		t1.put(new Student(23, "Vivek"), "A");
+		t1.put(new Student(43, "Aniket"), "B");
+		t1.put(new Student(15, "Akshay"), "C");
+
+		Set<Map.Entry<Student, String>> s1 = t1.entrySet();
+
+		for (Map.Entry<Student, String> e1 : s1) {
+			System.out.println(e1.getKey());
+			System.out.println(e1.getValue());
+			System.out.println("-----------------");
+		}
+
+		System.out.println(t1.get(new Student(43, "Aniket")));
+	}
+
+}

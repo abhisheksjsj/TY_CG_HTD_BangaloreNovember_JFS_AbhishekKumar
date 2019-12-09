@@ -1,0 +1,11 @@
+
+public class Pepsi1 implements Bottle1 {
+	public void open() {
+		System.out.println("Open the bottle");
+	}
+
+	@Override
+	public void drink() {
+		System.out.println("Drink the pepsi");
+	}
+}

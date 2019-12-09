@@ -1,0 +1,15 @@
+package com.tyss.map.LinkedHashMap;
+
+import java.util.LinkedHashMap;
+
+public class LinkedHashMap2 {
+	public static void main(String[] args) {
+		LinkedHashMap<Integer, Employee> l1 = new LinkedHashMap<Integer, Employee>();
+		l1.put(34, new Employee(23000, "Aniket"));
+		l1.put(56, new Employee(23000, "Divya"));
+		l1.put(67, new Employee(34000, "Anish"));
+
+		System.out.println(l1.get(34));
+	}
+
+}

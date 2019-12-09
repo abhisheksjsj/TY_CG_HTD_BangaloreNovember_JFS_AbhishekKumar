@@ -1,0 +1,5 @@
+package com.capgemini.fms.factory;
+
+public class UserFactory {
+
+}

@@ -1,0 +1,15 @@
+package com.tyss.map.hashMap;
+
+import java.util.HashMap;
+
+public class HashMap1 {
+	public static void main(String[] args) {
+		HashMap<Integer, String> h1 = new HashMap<Integer, String>();
+		h1.put(2, "Ramesh");
+		h1.put(4, "Suresh");
+		h1.put(6, "Ganesh");
+		h1.put(8, "Dinesh");
+
+	}
+
+}
