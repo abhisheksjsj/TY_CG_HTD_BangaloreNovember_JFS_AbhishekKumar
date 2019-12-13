@@ -1,0 +1,5 @@
+package com.capgemini.psad.bean;
+
+public class Contact {
+
+}

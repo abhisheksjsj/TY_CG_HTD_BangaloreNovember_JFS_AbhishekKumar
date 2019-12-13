@@ -1,0 +1,56 @@
+SELECTION :- Retrival of data by the help of only column_name.
+
+SELECT */[DISTINCT] COLUMN_NAME/EXPRESSION [ALIAS]
+FROM TABLE_NAME;
+
+---------------------------------------------------------
+PROJECTION:- Retrival of data by the help of both column and row names.
+
+SELECT */[DISTINCT] COLUMN_NAME/EXPRESSION [ALIAS]                      	ORDER & NATURE OF EXECUTION:-
+FROM TABLE_NAME									1. FROM
+WHERE <FILTER_CONDITION>;							2. WHERE =>ROW BY ROW
+										3. SELECT =>ROW BY ROW
+
+---------------------------------------------------------					
+GROUP BY:-									ORDER OF EXECUTION:-
+										1. FROM	
+SELECT */[DISTINCT] COLUMN_NAME/EXPRESSION [ALIAS]				2. WHERE(IF ANY)=>ROW BY ROW
+FROM TABLE_NAME									3. GROUP BY=>ROW BY ROW
+[WHERE <FILTER_CONDITION>]							4. SELECT=> GROUP BY GROUP
+GROUP BY COLUMN_NAME
+
+----------------------------------------------------------
+HAVING CLAUSE:-	
+										1. FROM
+SELECT */[DISTINCT] COLUMN_NAME/EXPRESSION [ALIAS]				2. WHERE(IF ANY) =>ROW BY ROW
+FROM TABLE_NAME									3. GROUP BY=>ROW BY ROW
+[WHERE <FILTER_CONDITION>]							4. HAVING=> GROUP BY GROUP
+GROUP BY COLUMN_NAME								5. SELECT=> GROUP BY GROUP
+HAVING<GROUP FILTER_CONDITION>								
+
+-----------------------------------------------------------										
+ORDER BY:-
+										1. FROM
+SELECT */[DISTINCT] COLUMN_NAME/EXPRESSION [ALIAS]				2. WHERE(IF ANY) =>ROW BY ROW
+FROM TABLE_NAME									3. GROUP BY=>ROW BY ROW
+[WHERE <FILTER_CONDITION>]							4. HAVING=> GROUP BY GROUP
+[GROUP BY COLUMN_NAME]								5. SELECT=> GROUP BY GROUP
+[HAVING<GROUP FILTER_CONDITION>]						6. ORDER BY=>ROW BY ROW				
+ORDER BY COLUMN_NAME
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+h1{
+    font-style: italic;
+    
+}
+table tr,th,td {
+    border: 2px solid brown;
+    border-collapse:collapse ;
+   
+}

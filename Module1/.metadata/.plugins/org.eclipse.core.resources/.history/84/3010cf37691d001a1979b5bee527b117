@@ -1,0 +1,21 @@
+package com.capgemini.psad.controller;
+
+import java.util.Scanner;
+
+public class ContactController {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int a1 = sc.nextInt();
+
+		switch (key) {
+		case value:
+
+			break;
+
+		default:
+			break;
+		}
+	}
+
+}

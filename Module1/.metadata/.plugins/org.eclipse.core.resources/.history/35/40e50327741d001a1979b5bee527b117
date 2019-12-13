@@ -1,0 +1,35 @@
+package com.capgemini.psad.controller;
+
+import java.util.Scanner;
+
+public class ContactController {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter 1 to show all Contacts");
+		System.out.println("Enter 2 to search the Contact");
+		System.out.println("Enter 3 Operate on Contact");
+
+		int a1 = sc.nextInt();
+		switch (a1) {
+		case 1:
+
+			break;
+		case 2:
+			System.out.println("Press 1 to Call");
+			System.out.println("Press 2 to message");
+			System.out.println("Press 3 to go back to main menu");
+			break;
+
+		case 3:
+			System.out.println("Press 1 to add Contact");
+			System.out.println("Press 2 to Delete a Contact");
+			System.out.println("Press 3 to update Contact");
+			break;
+
+		default:
+			break;
+		}
+	}// end of main method
+
+}// end of main class

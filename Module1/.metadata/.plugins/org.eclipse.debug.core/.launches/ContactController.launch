@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/phonesimulatorapplicationdevelopment/src/com/capgemini/psad/controller/ContactController.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.capgemini.psad.controller.ContactController"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="phonesimulatorapplicationdevelopment"/>
+</launchConfiguration>

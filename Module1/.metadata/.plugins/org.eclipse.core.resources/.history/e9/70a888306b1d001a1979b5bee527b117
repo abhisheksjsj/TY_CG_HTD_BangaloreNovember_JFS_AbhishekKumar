@@ -1,0 +1,5 @@
+package com.capgemmini.psad.factory;
+
+public class ContactFactory {
+
+}

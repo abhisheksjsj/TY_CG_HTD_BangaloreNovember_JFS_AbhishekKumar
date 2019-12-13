@@ -1,0 +1,5 @@
+package com.capgemini.psad.dao;
+
+public class ContactDAOImpl {
+
+}

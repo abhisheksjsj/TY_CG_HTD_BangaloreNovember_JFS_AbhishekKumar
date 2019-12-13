@@ -1,0 +1,44 @@
+ul li {
+    display: inline-block;
+    list-style:none;
+    padding: 10px;
+    
+}
+img{
+    padding:20px ;
+    border: 20px;
+    box-shadow: 2px;
+    border-radius: 50%;
+}
+.Abhi li{
+}
+.Abhi{
+    float:right;
+    width: 50%;
+    margin-top: -72px;
+    text-align:end;
+
+}
+
+.Kr{
+    width: 50%;
+
+}
+.Image {
+    letter-spacing: 2px;
+    margin-left: 35%;
+    margin-top:10% ;
+    border: 1px solid rebeccapurple;
+    width: 400px;
+}
+section{
+    text-align:center;
+    padding: 20px;
+}
+a{
+    padding: 20px;
+}
+*{
+    text-decoration: none;
+
+}

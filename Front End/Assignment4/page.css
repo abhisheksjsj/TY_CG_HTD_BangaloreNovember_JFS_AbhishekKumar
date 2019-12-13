@@ -1,0 +1,54 @@
+.Abhi li{
+    text-align: end;
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+
+}
+.Abhi{
+    width: 50%;
+    text-align: end;
+    float: right;
+    margin-top: -64.5px;
+    background-color:red;
+    padding: 7.3px;
+    
+}
+.Kr li{
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    
+
+
+}
+.Kr{
+    width: 50%;
+   background-color:aqua;
+   padding: 7px;
+
+}
+figure{
+    margin :50px;
+    margin-left: 130px;
+}
+img{
+    box-shadow: 20px 20px 15px green;
+    border:2px solid red;
+    width: 350px;
+    height: 350px;
+    margin: 35px;
+    border-radius: 50%;
+
+}
+*{
+    text-decoration: none;
+    
+}
+body
+{
+    background-image: url(./images.jpg);
+    background-size: cover;
+}
+
