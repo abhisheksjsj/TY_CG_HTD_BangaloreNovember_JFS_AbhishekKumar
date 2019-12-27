@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="springmvc"/>
+<aop-project name="springboot"/>
+<aop-project name="springrest"/>
+<aop-project name="empspringboot"/>
+<aop-project name="empwebapp"/>
+<aop-project name="springcore"/>
+</aop-reference-model>

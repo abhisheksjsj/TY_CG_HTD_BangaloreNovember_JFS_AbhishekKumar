@@ -1,0 +1,24 @@
+package com.capgemini.empwebapp.beans;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="employee_addressinfo")
+public class EmployeeAddressBean {
+	@Id
+	@Column
+	@GeneratedValue
+	private int id;
+	@Column(nullable=false)
+	private String addType;
+	@Column
+	private String address1;
+	@Column
+	private String address2;
+	private EmployeeBean bean;
+
+}

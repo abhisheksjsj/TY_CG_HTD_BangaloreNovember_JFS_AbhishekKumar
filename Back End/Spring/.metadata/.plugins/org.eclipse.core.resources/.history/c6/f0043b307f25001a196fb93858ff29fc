@@ -1,0 +1,12 @@
+package com.capgemini.empwebapp.dao;
+
+import com.capgemini.empwebapp.beans.EmployeeBean;
+
+public interface EmployeeDAO {
+	
+	public EmployeeBean auth(String email, String password);
+	public boolean register(EmployeeBean bean);
+	public EmployeeBean getEmployee(String email);
+	
+
+}

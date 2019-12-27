@@ -1,0 +1,28 @@
+package com.capgemini.mywebapp.servlets;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.capgemini.mywebapp.beans.EmployeeInfoBean;
+import com.capgemini.mywebapp.service.EmployeeService;
+import com.capgemini.mywebapp.service.EmployeeServiceImpl;
+
+public class SearchEmployeeServlet extends HttpServlet {
+
+	private EmployeeService employeeService = new EmployeeServiceImpl();
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// Get the form data
+		String empIdVal = req.getParameter("empId");
+		int empId = Integer.parseInt(empIdVal);
+
+		EmployeeInfoBean employeeInfoBean = employeeService.searchEmployee(empId);
+
+	}// end of doGet()
+
+}// end of class

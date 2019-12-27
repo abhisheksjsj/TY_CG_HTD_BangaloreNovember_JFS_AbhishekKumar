@@ -1,0 +1,63 @@
+package com.capgemini.springmvc.controller;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.CookieValue;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.capgemini.springmvc.beans.User;
+
+@Controller
+public class SpringController {
+	@RequestMapping("/hello")
+	public String hello(ModelMap map) {
+		map.addAttribute("msg", "Hello world.........!!!!");
+		return "index";
+
+	}
+	//@RequestMapping(path ="/query", method = RequestMethod.GET)//exactly like overriding doGet() method in servlet
+	@GetMapping("/query")//instead of line no. 18
+	public String query(@RequestParam(name="name")String name, @RequestParam(name="age")int age, ModelMap map) {
+		map.addAttribute("name", name);
+		map.addAttribute("age", age);
+		
+		return "query";
+	}
+	@GetMapping("/form")
+	public String form() {
+		return "form";
+	}
+	@PostMapping("/form")
+	public String form(User user, ModelMap map) {
+		map.addAttribute("name", user.getName());
+		map.addAttribute("email", user.getEmail());
+		map.addAttribute("password", user.getPassword());
+		map.addAttribute("gender", user.getGender());
+		
+		return "form";
+		
+	}
+	@GetMapping("/createcookie")
+	public String createCookie(HttpServletResponse response) {
+		Cookie cookie=new Cookie("name", "Akshay");
+		response.addCookie(cookie);
+		return "createcookie";
+	}
+	@GetMapping("/getcookie")
+	public String getCookie(@CookieValue(name="name", required=false)String name, ModelMap map) {
+		if(name!=null)
+			map.addAttribute("name", name);
+		else
+			map.addAttribute("name", "shivalakshmi");
+		
+		return "getcookie";
+	}
+
+}

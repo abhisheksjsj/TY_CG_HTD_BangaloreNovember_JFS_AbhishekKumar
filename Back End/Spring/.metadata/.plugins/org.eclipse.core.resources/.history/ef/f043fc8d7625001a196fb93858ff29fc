@@ -1,0 +1,5 @@
+package com.capgemini.empwebapp.config;
+
+public class ORMConfig {
+
+}

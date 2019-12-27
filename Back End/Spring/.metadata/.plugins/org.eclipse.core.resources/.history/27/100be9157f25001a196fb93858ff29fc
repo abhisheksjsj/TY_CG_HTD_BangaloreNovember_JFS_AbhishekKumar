@@ -1,0 +1,5 @@
+package com.capgemini.empwebapp.dao;
+
+public interface EmployeeDAO {
+
+}
